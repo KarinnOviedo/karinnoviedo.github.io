@@ -419,7 +419,7 @@ input {
 
 .about__img {
   display: flex;
-  column-gap: 1rem;
+  column-gap: 0rem;
   align-items: center;
   justify-content: center;
 }
@@ -451,6 +451,7 @@ input {
   position: relative;
   width: 200px;
   overflow: var(--img-hidden);
+  
 }
 
 .discover__data {
@@ -476,6 +477,7 @@ input {
 
 .discover__img {
   transition: var(--img-transition);
+  
 }
 
 .discover__img:hover {
@@ -486,6 +488,9 @@ input {
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: none;
 }
+
+
+
 
 /*=============== EXPERIENCE ===============*/
 .experience__container {
@@ -676,22 +681,7 @@ input {
   color: var(--text-color);
 }
 
-/*=============== SPONSORS ===============*/
-.sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  justify-items: center;
-  row-gap: 3.5rem;
-}
 
-.sponsor__content:hover .sponsor__img {
-  filter: invert(0.5);
-}
-
-.sponsor__img {
-  width: 90px;
-  filter: invert(0.7);
-  transition: var(--img-transition);
-}
 
 /*=============== FOOTER ===============*/
 .footer__container {
@@ -790,7 +780,7 @@ input {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .60rem;
+  width: .80rem;
   background-color: var(--scroll-bar-color);
 }
 
@@ -826,6 +816,8 @@ input {
   .video__container {
     padding: 0;
   }
+
+  
 }
 
 /* For medium devices */
@@ -979,16 +971,16 @@ input {
     width: 240px;
   }
   .about__img-one {
-    width: 230px;
+    width: 290px;
   }
   .about__img-two {
     width: 290px;
   }
   .discover__card {
-    width: 237px;
+    width: 350px;
   }
   .discover__container {
-    width: 700px;
+    width: 1000px;
   }
   .discover__data {
     left: 1.5rem;
@@ -1019,7 +1011,7 @@ input {
     gap: 3rem 2rem;
   }
   .place__card, .place__img {
-    height: 263px;
+    height: 363px;
   }
   .footer__content {
     justify-items: center;
