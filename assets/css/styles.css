@@ -340,7 +340,8 @@ input {
 }
 
 .home__info {
-  background-color: var(--first-color);
+  background-color: rgba(0, 128, 0, 0.74);
+  
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
