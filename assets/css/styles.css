@@ -335,7 +335,7 @@ input {
 }
 
 .home__social-link {
-  font-size: 1.2rem;
+  font-size: 2rem;
   width: max-content;
 }
 
@@ -600,7 +600,12 @@ input {
 }
 
 .place__content, .place__title {
-  color: var(--white-color);
+  color: green; 
+}
+
+.place__title,
+.place__content p{
+  background: rgba(212, 212, 212, 0.5);
 }
 
 .place__content {
@@ -711,7 +716,7 @@ input {
 }
 
 .footer__social {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--title-color);
   margin-right: var(--mb-1-25);
 }
@@ -800,7 +805,18 @@ input {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 700px) {
+
+  .home__data-subtitle, 
+  .home__data-title{
+  color: rgb(0, 59, 0);
+  background: rgba(204, 204, 204, 0.616);
+}
+
+.home__data-subtitle {
+  margin-top: 0;
+}
+
   .place__container {
     grid-template-columns: max-content;
     justify-content: center;
@@ -833,23 +849,25 @@ input {
                           "c";
     grid-gap: 20px;
   }
+
+  #prueba h2, 
+  #prueba span,
+  #prueba p{
+    margin-left: 20px;
+  }
   #discover_title {
-    margin: auto;
     grid-area: d;
   }
   #prueba_1 {
     grid-area: a;
-    margin:auto;
     padding-top: 50px;
   }
   #prueba_2 {
     grid-area: b;
-    margin:auto;
     padding-top: 50px;
   }
   #prueba_3 {
     grid-area: c;
-    margin:auto;
     padding-top: 50px;
   }
   #prueba img {
@@ -860,6 +878,7 @@ input {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+  
   .video__container {
     display: grid;
     grid-template-columns: .6fr;
@@ -884,22 +903,19 @@ input {
     grid-gap: 20px;
   }
   #discover_title {
-    margin: auto;
+    
     grid-area: d;
   }
   #prueba_1 {
     grid-area: a;
-    margin:auto;
     padding-top: 50px;
   }
   #prueba_2 {
     grid-area: b;
-    margin:auto;
     padding-top: 50px;
   }
   #prueba_3 {
     grid-area: c;
-    margin:auto;
     padding-top: 50px;
   }
   #prueba img {
@@ -909,6 +925,7 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  
   body {
     margin: 0;
   }
@@ -1047,7 +1064,6 @@ input {
   }
   #prueba_3 {
     grid-area: c;
-    margin:auto;
     padding-top: 30px;
   }
   #prueba img {
@@ -1148,7 +1164,6 @@ input {
   }
   #prueba_3 {
     grid-area: c;
-    margin:auto;
     margin-bottom: 10px;
   }
   #prueba img {
@@ -1165,6 +1180,9 @@ input {
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
+  
+
+
   body {
     margin: 0;
   }
