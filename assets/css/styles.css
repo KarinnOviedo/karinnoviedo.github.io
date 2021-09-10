@@ -818,11 +818,12 @@ input {
 }
 
 .header {
-  background: rgb(28, 165, 170);
+  background: rgba(28, 165, 170, 0.644);
 }
 
 .home {
-  background: rgba(28, 165, 170, 0.644);
+  
+  background: rgb(28, 165, 170);
 }
 
 .home__info {
