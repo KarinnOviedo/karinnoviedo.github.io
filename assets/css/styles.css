@@ -807,12 +807,35 @@ input {
 /* For small devices */
 @media screen and (max-width: 700px) {
 
-  .home__data-subtitle, 
+  /* .home__data-subtitle, 
   .home__data-title{
   color: rgb(0, 59, 0);
-  background: rgba(204, 204, 204, 0.616);
+  
+} */
+
+.home__img {
+  display: none;
 }
 
+.header {
+  background: rgb(28, 165, 170);
+}
+
+.home {
+  background: rgba(28, 165, 170, 0.644);
+}
+
+.home__info {
+  background:rgb(3, 150, 118);
+  border-radius: 5px;
+}
+.hgg {
+  background:rgb(3, 150, 118);
+  border-radius: 5px;
+}
+.show {
+  display: none;
+}
 .home__data-subtitle {
   margin-top: 0;
 }
