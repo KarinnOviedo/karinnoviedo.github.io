@@ -24,7 +24,7 @@
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">
+                <a href="/" class="nav__logo">
                     <img src="assets/img/teko.png" alt="" width="120" >
                 </a>
 
@@ -386,11 +386,11 @@
                         <h2 class="section__title subscribe__title">Suscribete a nuestro<br> Newsletter</h2>
                         <p class="subscribe__description">Suscribete a nuestro Newsletter y podrás obtener increibles descuentos y promociones.
                         </p>
-    
-                        <form action="" class="subscribe__form">
-                            <input type="text" placeholder="Ingresa tu email" class="subscribe__input">
-    
-                            <button class="button">
+                        
+                        <form id="formEmail" action="enviar.php" method="post" class="subscribe__form">
+                            <input name="message" id="enviarEmail" type="email" placeholder="Ingresa tu email" class="subscribe__input message" required>
+                            
+                            <button id="botonEmail" class="button" type="submit">
                                 Subscribirme
                             </button>
                         </form>

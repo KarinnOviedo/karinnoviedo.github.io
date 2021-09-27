@@ -172,3 +172,28 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== Subscribe ====================*/ 
+
+const formEmail = document.getElementById('enviarEmail')
+const enviarEmail = document.getElementById('enviarEmail')
+const botonEmail = document.getElementById('botonEmail')
+
+const validarEmail = function (e) {
+    if (enviarEmail.value == 0) {
+        alert(a)
+    }
+    e.preventDefault();
+}
+
+let enviar = function (e) {
+    validarEmail(e)
+    console.log(enviarEmail.value);
+    
+}
+
+formEmail.addEventListener("submit", enviar)
+
+
+
+    
